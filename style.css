@@ -6,7 +6,8 @@
 html{
     font-size: 62.5%;
     background-color:  hsl(30, 38%, 92%);
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
 }
 .container{
     display: flex;
@@ -17,7 +18,7 @@ html{
 }  
 .content{
     width: 60rem;
-    height: 45rem;
+    height:45rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     overflow: hidden;
@@ -25,8 +26,9 @@ html{
 .text-content{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding:2rem
+    justify-content: space-between;
+    padding:2.8rem;
+    height: 45rem;
 }
 .grid{
     display: grid;
@@ -37,29 +39,67 @@ html{
 }
 .image{
     width: 100%;
+    
+}
+.perfume-text{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500
+    ;
 }
 h1{
+    color: hsl(212, 21%, 14%) ;
+    line-height: 1;
+    padding: 1.4rem 0 1.4rem 0;
+    letter-spacing: 1px;
+}
+h1, .big-price{
     font-family: "Fraunces", serif;
-    font-size: 3.6rem;
+    font-size: 3.3rem;
+    font-weight: 700;
+    
 }
 .prices{
     display: flex;
-    justify-content: space-around;
+    text-align: left;
+    
+    align-items: center;
+}
+.big-price{
+    color: hsl(158, 36%, 37%);
+    padding: 2.2rem 2.2rem 2.2rem 0;
+}
+.small-price{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.paragraph{
+    font-size: 1.5rem;
+    line-height: 1.65;
+    
 }
 .btn, .btn:link, .btn:visited{
-    display: inline-block;
+    display: flex;
     font-size: 1.4rem;
     font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
     text-decoration: none;
     transition: all 0.3s;
+    text-align: center;
     border: none;
     cursor: pointer;
     font-family: inherit;
+    justify-content: center;
+    align-items: center;
 }
+
 .btn--full:link, 
 .btn--full:visited{
     background-color:hsl(158, 36%, 37%);
     color: #fff;
+}
+.svg{
+    margin-right: 1rem;
 }
