@@ -13,7 +13,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 15rem;
     
 }  
 .content{
@@ -32,9 +32,10 @@ html{
     padding:2.8rem;
     height: 45rem;
 }
-.image{
+.images{
+    background-image: url('images/image-product-desktop.jpg');
     width: 100%;
-    
+    background-size: cover;
 }
 .perfume-text{
     font-size: 1.3rem;
@@ -105,14 +106,30 @@ h1, .big-price{
 
 @media (max-width: 37.5em){
     .container{
-        margin-top: 0;
+        margin: 0;
+        border-radius: 20px;
     }
     .content{
         grid-template-columns: 1fr; 
         height: 100vh;
+        
     }
-    .image{
-        grid-row: 1;
+    .images{
+        background-image: url('images/image-product-mobile.jpg');
         height: 24rem;
+        background-size:cover;
+    }
+    .big-price{
+        padding:1.6rem 1.6rem 1.6rem 0;
+    }
+    .text-content{
+        padding: 3.2rem;
+        justify-content: space-evenly;
+    }
+    h1{
+        font-size: 3.1rem;
+    }
+    .paragraph{
+        font-size: 1.4rem;
     }
 }
