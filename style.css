@@ -22,6 +22,8 @@ html{
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .text-content{
     display: flex;
@@ -29,13 +31,6 @@ html{
     justify-content: space-between;
     padding:2.8rem;
     height: 45rem;
-}
-.grid{
-    display: grid;
-    
-}
-.grid--2-cols {
-    grid-template-columns: repeat(2, 1fr);
 }
 .image{
     width: 100%;
@@ -100,6 +95,24 @@ h1, .big-price{
     background-color:hsl(158, 36%, 37%);
     color: #fff;
 }
+.btn--full:hover, 
+.btn--full:active{
+    background-color: #1a4032;
+}
 .svg{
     margin-right: 1rem;
+}
+
+@media (max-width: 37.5em){
+    .container{
+        margin-top: 0;
+    }
+    .content{
+        grid-template-columns: 1fr; 
+        height: 100vh;
+    }
+    .image{
+        grid-row: 1;
+        height: 24rem;
+    }
 }
